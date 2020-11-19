@@ -1,0 +1,9 @@
+@mixin flex($displayType, $justifyType) {
+  display: $displayType;
+  justify-content: $justifyType;
+}
+
+@mixin display_inbock($valign) {
+  display: inline-block;
+  vertical-align: $valign;
+}

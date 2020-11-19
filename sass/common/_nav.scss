@@ -1,0 +1,85 @@
+.header{
+
+  padding:1.5rem 5rem;
+  background: $second-bgcolor;
+  @include flex(flex, space-between);
+  align-items:center;
+
+  .logo{
+    font-size: 1.5em;
+    @include flex(flex, space-between);
+  }
+
+  .contact_info{
+    @include flex(flex, flex-end);
+
+    &list{
+
+    }
+
+    &--item{
+      a{
+        color:$primary-color;
+        text-decoration: none;
+
+        &:hover{
+          opacity: .5;
+        }
+
+      }
+      
+    }
+  }
+}
+
+.navHeader{
+  background-color: #d7cccc;
+  @include flex(flex, space-between);
+  align-items: center;
+  padding:0.6rem 5em;
+  
+
+  .nav{
+    
+    &__list{
+      @include flex(flex, center);
+  
+      &--item{
+        margin: 0 0.8rem;
+  
+        &:last-child{
+          margin-right: 0;
+        }
+        &:first-child{
+          margin-left: 0;
+        }
+  
+        a{
+          text-decoration: none;
+          color:$primary-color;
+          display: block;
+          &:hover{
+            opacity: .5;
+          }
+        }
+        .active{
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  .searchBar{
+    width: 288px;
+    form{
+
+    }
+
+    input{
+      display: block;
+      width: 100%;
+    }
+
+  }
+}
+

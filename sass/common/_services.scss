@@ -1,0 +1,76 @@
+#services{
+  background: #f47a7a;
+  color: #fff;
+  padding: 2em;
+  
+  .services{
+    text-align: center;
+    h2{
+      line-height: 100%;
+      font-size: 3em;
+      margin: 0 0 1em;
+    }
+
+    p{
+      font-size: 1.2rem;
+    } 
+    &__container{
+      margin: 6em 0 0;
+      @include flex(flex, center);
+
+      &--card{
+        flex: 1 1 0px;
+        background-color: #fff;
+        color: $primary-color;
+        margin: 0 1rem;
+        position: relative;
+        min-height: 507px;
+        border-radius: 5px;
+        overflow: hidden;
+
+        p{
+          font-size: 1.1rem;
+          color: #555;
+          margin: 2em 0 0;
+          padding: 1em;
+          line-height: 1.8em;
+        }
+
+        h3{
+          font-size: 1.5em;
+          padding: 7em 0 1em;
+          background-color: #fbeaea;
+          line-height: 100%;
+          font-weight: 300;
+          font-style: italic;
+        }
+
+        &:nth-child(2) h3{
+          background-color: #dfbebe !important;
+        }
+        &:last-child h3{
+          background-color: #e16a6a !important;
+        } 
+        img{
+          width: 100%;
+          display: block;
+          max-width: 80px;
+          margin: 0 auto;
+          border-radius: 50%;
+          border: 3px solid #c1a0a0;
+          padding: 0.6em;
+          position: absolute;
+          background: #fff;
+          left: 0;
+          right: 0;
+          top: 37px;
+        }
+
+        &:first-child{margin-left:0;}
+        &:last-child{margin-right:0;}
+      }
+    }
+
+  }
+}
+

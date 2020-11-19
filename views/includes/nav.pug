@@ -1,0 +1,14 @@
+div.navHeader
+  nav.nav
+    ul.nav__list
+      li.nav__list--item
+        a(href="/", class=(title === "home" ? 'active' :'')) Home
+      li.nav__list--item 
+        a(href="/about", class=(title === "about" ? 'active' :'')) About
+      li.nav__list--item  
+        a(href="/careers", class=(title === "careers" ? 'active' :''))  Careers
+      li.nav__list--item 
+        a(href="/contact", class=(title === "contact" ? 'active' :'')) Contact Us
+  div.searchBar
+    form(action="#" method="post")
+      input(type="text", name="search", required="required", placeholder="Search here")

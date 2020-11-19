@@ -1,0 +1,40 @@
+
+.banner{
+  text-align: center;
+  min-height: 369px;
+  padding: 4em 4em 2em;
+
+  h1{
+    line-height: 100%;
+    margin: 0 0 1rem
+  }
+
+  p{
+    line-height: 2em;
+  }
+
+  &__btn_cont{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 0;
+    @include flex(flex, center);
+
+    &--button{
+      display: block;
+      background: #e3dada;
+      margin: 0 1rem;
+      width: 260px;
+      padding: 1rem;
+      color: #222;
+      text-decoration: none;
+
+      &:last-child{
+        background: #f47a7a;
+        color: #fff
+      }
+      &:hover{
+        opacity: .5;
+      }
+    }
+  }
+}
